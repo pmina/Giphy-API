@@ -1,4 +1,4 @@
-//I used the auto format and i hope it didn't make it harder to read 
+//I used the auto format and i hope it didn't make it harder to read
 //could not get the animation to work :(
 var showTitle = [
   "how i met your mother",
@@ -27,7 +27,7 @@ function createButtons() {
 
     var thisShow = $(this).data("name");
     var giphyURL =
-      "http://api.giphy.com/v1/gifs/search?q=tv+show+" +
+      "https://api.giphy.com/v1/gifs/search?q=tv+show+" +
       thisShow +
       "&limit=10&api_key=mpjh0hKenTMy31oI1My2Whw3K6AI7b6z";
     $.ajax({ url: giphyURL, method: "GET" }).done(function(giphy) {
